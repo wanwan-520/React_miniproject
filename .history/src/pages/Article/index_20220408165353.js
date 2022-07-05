@@ -27,8 +27,6 @@ const Article = () => {
     page: 1,
     per_page: 10
   })
-
-
   // 获取文章列表
   useEffect(() => {
     const loadList = async () => {
@@ -89,10 +87,8 @@ const Article = () => {
     })
   }
 
-
   // 编辑文章
   const navigate = useNavigate()
-  
   const goPublish = (data) => {
     navigate(`/publish?id=${data.id}`)
   }

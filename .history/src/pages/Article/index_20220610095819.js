@@ -89,10 +89,8 @@ const Article = () => {
     })
   }
 
-
   // 编辑文章
   const navigate = useNavigate()
-  
   const goPublish = (data) => {
     navigate(`/publish?id=${data.id}`)
   }

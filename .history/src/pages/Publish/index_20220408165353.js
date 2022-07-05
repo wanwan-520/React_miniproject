@@ -85,7 +85,6 @@ const Publish = () => {
     if (id) {
       await http.put(`/mp/articles/${id}?draft=false`, params)
     } else {
-      //新增接口
       await http.post('/mp/articles?draft=false', params)
     }
 
